@@ -1,0 +1,488 @@
+:root {
+    --main-blue: rgb(13,110,253);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color: #212529;
+}
+
+body {
+    background-color: rgb(248,249,250);
+}
+
+.header__container {
+    position: relative;
+    width: 90%;
+    min-height: 20.2rem;
+    max-width: 90rem;
+    height: auto;
+    margin: 4.8rem auto 6.4rem;
+    text-align: center;
+}
+
+.header__container .fa-bootstrap {
+    margin-bottom: 2.4rem;
+    font-size: 6.4rem;
+    color: #8612fb;
+}
+
+.header__container h1 {
+    margin-bottom: 0.8rem;
+    font-size: calc(2.12rem + .9vw);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.header__container p {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.main__container {
+    position: relative;
+    width: 90%;
+    min-height: 28.8rem;
+    max-width: 90rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+.cart__container {
+    width: 100%;
+    margin-bottom: 4.8rem;
+}
+
+.cart__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+
+.cart__title h2 {
+    font-size: calc(2rem + 0.3vw);
+    color: var(--main-blue); 
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.cart__title span {
+    padding: 0.56rem 1.04rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    background-color: var(--main-blue);
+    border-radius: 1.5rem;
+}
+
+.cart__info {
+    margin-bottom: 1.6rem;
+}
+
+.cart__item-list {
+    list-style: none;
+}
+
+.cart__item {
+    padding: 0.8rem 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid rgba(0,0,0,.125);
+    border-top-width: 0;
+}
+
+.cart__item:first-child {
+    border-top-width: 0.1rem;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+}
+
+.cart__item:last-child {
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+}
+    
+.cart__item--white {
+    background-color: #fff;
+}
+
+.cart__item--grey {
+    background-color: rgb(248,249,250);
+}
+
+.cart__item-name--product h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.cart__item-name--product span {
+    font-size: 1.4rem;
+    line-height: 1.25;
+    color: #6c757d;
+}
+
+.cart__item-price--weak {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    color: #6c757d;
+}
+
+.cart__item-name--promo h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: rgb(25,135,84);
+}
+
+.cart__item-name--promo span {
+    font-size: 1.4rem;
+    line-height: 1.25;
+    color: rgb(25,135,84);
+}
+
+.cart__item-price--promo {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    color: rgb(25,135,84);
+}
+
+.cart__item--total {
+    font-size: 1.6rem;
+}
+
+.cart__promo-container {
+    display: flex;
+    width: 100%;
+    padding: 0.8rem;
+    border: 0.1rem solid rgba(0,0,0,.125);
+    border-radius: 0.4rem;
+    background-color: #fff;
+}
+
+.cart__promo-container input {
+    width: 1%;
+    padding: 0.6rem 1.2rem;
+    flex-grow: 1;
+    font-size: 1.6rem;
+    border: 0.1rem solid rgba(0,0,0,.125);
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+}
+
+.cart__promo-container button {
+    margin-left: -0.1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #6c757d;
+    border: 0.1rem solid rgba(0,0,0,.125);
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.cart__promo-container button:hover {
+    background-color: #5c636a;
+    border-color: #565e64;
+}
+
+.form__container {
+    display: block;
+    width: 100%;
+    margin-bottom: 9.6rem;
+}
+
+.form__container h2 {
+    margin-bottom: 1.6rem;
+    font-size: calc(2rem + 0.3vw);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.form__address-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 0 -0.8rem;
+}
+
+.form__address-input--50, .form__address-input--100, .form__address-input--40, .form__address-input--33, .form__address-input--25 {
+    width: 100%;
+}
+
+.form__address-input {
+    margin-bottom: 1.6rem;
+    padding: 0 0.8rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+
+.form__address-input label {
+    margin-bottom: 0.8rem;
+}
+
+.form__address-input input {
+    padding: 0.6rem 1.2rem;
+    height: 3.8rem;
+    font-size: 1.6rem;
+    border: 0.1rem solid rgba(0,0,0,.125);
+    border-radius: 0.4rem;
+}
+
+.form__address-input select {
+    padding: 0.6rem 3.6rem 0.6rem 1.2rem;
+    height: 3.8rem;
+    font-size: 1.6rem;
+    background-color: #fff;
+    border: 0.1rem solid rgba(0,0,0,.125);
+    border-radius: 0.4rem;
+}
+
+.form__address-input-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.form__address-input-group span{
+    padding: 0.6rem 1.2rem;
+    background-color: #e9ecef;
+    border: 0.1rem solid rgba(0,0,0,.125);
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+}
+
+.form__address-input-group input {
+    flex-grow: 1;
+    margin-left: -0.1rem;
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+}
+
+.form__info-check {
+    margin-top: 0.8rem;
+    margin-bottom: 2.4rem;
+    padding: 2.4rem 0;
+    border-bottom: 0.1rem solid rgba(0,0,0,.125);
+    border-top: 0.1rem solid rgba(0,0,0,.125);
+}
+
+.form__info-check-container {
+    display: block;
+    position: relative;
+    padding-left: 2.3rem;
+    font-size: 1.6rem;
+}
+
+.form__info-check-container input {
+    position: absolute;
+    left: 0;
+    top: 0.4rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+}
+
+.form__info-check-container .checkmark {
+    position: absolute;
+    left: 0;
+    top: 0.4rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    border: 0.1rem solid #ced4da;
+    border-radius: 0.4rem;
+    background-color: white;
+}
+
+.form__info-check-container .checkmark::after{
+    content: "";
+    display: none;
+}
+
+.form__info-check-container input:checked ~ .checkmark {
+    background-color: var(--main-blue);
+    border: 0.1rem solid var(--main-blue);
+}
+
+.form__info-check-container input:checked ~ .checkmark::after {
+    display: block;
+    position: relative;
+    top: 0.2rem;
+    left: 0.2rem;
+    width: 9px;
+    height: 4px;
+    transform: rotate(-45deg);
+    border-left: solid white 2px;
+    border-bottom: solid white 2px;
+}
+
+.form__info-check-container input:focus ~ .checkmark{
+    box-shadow: 0 0 0 0.3rem rgba(13, 109, 253, 0.35);
+}
+
+.form__payment-check {
+    margin-bottom: 1.6rem;
+}
+
+.form__payment-check-container {
+    display: block;
+    position: relative;
+    padding-left: 2.3rem;
+    font-size: 1.6rem;
+}
+
+.form__payment-check-container input {
+    position: absolute;
+    left: 0;
+    top: 0.4rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+}
+
+.form__payment-check-container .checkradio {
+    position: absolute;
+    left: 0;
+    top: 0.4rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    border: 0.1rem solid #ced4da;
+    border-radius: 0.9rem;
+    background-color: white;
+}
+
+.form__payment-check-container .checkradio::after{
+    content: "";
+    display: none;
+}
+
+.form__payment-check-container input:checked ~ .checkradio {
+    background-color: var(--main-blue);
+    border: 0.1rem solid var(--main-blue);
+}
+
+.form__payment-check-container input:checked ~ .checkradio::after {
+    position: relative;
+    display: block;
+    left: 0.4rem;
+    top: 0.4rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.form__payment-check-container input:focus ~ .checkradio {
+    box-shadow: 0 0 0 0.3rem rgba(13, 109, 253, 0.35);
+}
+
+.form__payment-dates {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -0.8rem;
+}
+
+.form__payment-dates-input {
+    margin-bottom: 1.6rem;
+    padding: 0 0.8rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+
+.form__payment-dates-input label {
+    margin-bottom: 0.8rem;
+}
+
+.form__payment-dates-input input {
+    padding: 0.6rem 1.2rem;
+    height: 3.8rem;
+    font-size: 1.6rem;
+    border: 0.1rem solid rgba(0,0,0,.125);
+    border-radius: 0.4rem;
+}
+
+.form__payment-dates-input span {
+    font-size: 1.4rem;
+    color: #6c757d;
+}
+
+.form__checkout-button {
+    margin-top: 0.8rem;
+    padding-top: 2.4rem;
+    border-top: 0.1rem solid rgba(0,0,0,.125);
+}
+
+.form__checkout-button button {
+    padding: 0.8rem 1.6rem;
+    width: 100%;
+    font-size: 2rem;
+    border: 1px solid var(--main-blue);
+    border-radius: 0.5rem;
+    color: #fff;
+    background-color: var(--main-blue);
+    cursor: pointer;
+}
+
+.form__checkout-button button:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.footer__container {
+    position: relative;
+    width: 90%;
+    max-width: 90rem;
+    height: auto;
+    margin: 0 auto 4.8rem;
+    text-align: center;
+}
+
+.footer__container p {
+    margin-bottom: 0.4rem;
+    font-size: 1.6rem;
+    color: #6c757d;
+}
+
+.footer__link-list {
+    list-style: none;
+}
+
+.footer__link-list li {
+    margin: 0 0.4rem;
+    display: inline-block;
+}
+
+.footer__link-list a {
+    font-size: 1.6rem;
+    color: var(--main-blue);
+}
+
+.blue-focus:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.3rem rgba(13, 109, 253, 0.25);
+    outline: 0;
+}
+
+
+
+

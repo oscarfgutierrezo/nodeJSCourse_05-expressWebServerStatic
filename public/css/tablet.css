@@ -1,0 +1,28 @@
+.main__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cart__container {
+    width: 30%;
+    order: 2;
+    flex: 0 0 auto;
+}
+
+.form__container {
+    width: 70%;
+    margin-right: 4.8rem;
+}
+
+.form__address-input--40 {
+    width: 38%;
+}
+
+.form__address-input--33 {
+    width: 38%;
+}
+
+.form__address-input--25 {
+    width: 25%;
+}

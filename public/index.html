@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Example</title>
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/mobile-l.css" media="(min-width: 576px)">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 768px">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header__container">
+            <i class="fab fa-bootstrap"></i>
+            <h1>Checkout form</h1>
+            <p>Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.
+            </p>
+        </div>
+    </header>
+    <main>
+        <div class="main__container">
+            <section class="cart__container">
+                <div class="cart__title">
+                    <h2>Your cart</h2>
+                    <span>3</span>
+                </div>
+                <div class="cart__info">
+                    <ul class="cart__item-list">
+                        <li class="cart__item cart__item--white">
+                            <div class="cart__item-name--product">
+                                <h3>Product name</h3>
+                                <span>Brief description</span>
+                            </div>
+                            <span class="cart__item-price--weak">$12</span>
+                        </li>
+                        <li class="cart__item cart__item--white">
+                            <div class="cart__item-name--product">
+                                <h3>Second product</h3>
+                                <span>Brief description</span>
+                            </div>
+                            <span class="cart__item-price--weak">$8</span>
+                        </li>
+                        <li class="cart__item cart__item--white">
+                            <div class="cart__item-name--product">
+                                <h3>Third item</h3>
+                                <span>Brief description</span>
+                            </div>
+                            <span class="cart__item-price--weak">$5</span>
+                        </li>
+                        <li class="cart__item cart__item--grey">
+                            <div class="cart__item-name--promo">
+                                <h3>Promo code</h3>
+                                <span>EXAMPLECODE</span>
+                            </div>
+                            <span class="cart__item-price--promo">−$5</span>
+                        </li>
+                        <li class="cart__item cart__item--white cart__item--total">
+                            <span>Total (USD)</span>
+                            <span><b>$20</b></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cart__promo">
+                    <form class="cart__promo-container">
+                        <input class="blue-focus" type="text" placeholder="Promo code">
+                        <button type="submit">Redeem</button>
+                    </form>
+                </div>
+            </section>
+            <form class="form__container">
+                <h2>Billing address</h2>
+                <div class="form__address-container">
+                    <div class="form__address-input form__address-input--50">
+                        <label for="firstname">First name</label>
+                        <input class="blue-focus" type="text" id="firstname">
+                    </div>
+                    <div class="form__address-input form__address-input--50">
+                        <label for="lastname">Last name</label>
+                        <input class="blue-focus" type="text" id="lastname">
+                    </div>
+                    <div class="form__address-input form__address-input--100">
+                        <label for="username">Username
+                        </label>
+                        <div class="form__address-input-group">
+                            <span>@</span>
+                            <input class="blue-focus" type="text" id="username" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="form__address-input form__address-input--100">
+                        <label for="email">Email <span>(Opcional)</span></label>
+                        <input class="blue-focus" type="text" id="email" placeholder="you@example.com">
+                    </div>
+                    <div class="form__address-input form__address-input--100">
+                        <label for="address">Address</label>
+                        <input class="blue-focus" type="text" id="address" placeholder="1234 Main st">
+                    </div>
+                    <div class="form__address-input form__address-input--100">
+                        <label for="address-2">Address 2 <span>(Optional)</span></label>
+                        <input class="blue-focus" type="text" id="address-2" placeholder="Apartment or suite">
+                    </div>
+                    <div class="form__address-input form__address-input--40">
+                        <label for="country">Country</label>
+                        <select class="blue-focus" name="" id="country">
+                            <option value="">Choose...</option>
+                            <option value="">Estados Unidos</option>
+                        </select>
+                    </div>
+                    <div class="form__address-input form__address-input--33">
+                        <label for="state">State</label>
+                        <select class="blue-focus" name="" id="state">
+                            <option value="">Choose...</option>
+                            <option value="">California</option>
+                        </select>
+                    </div>
+                    <div class="form__address-input form__address-input--25">
+                        <label for="zip">Zip</label>
+                        <input class="blue-focus" type="text" id="zip">
+                    </div>
+                </div>
+                <div class="form__info-check">
+                    <label class="form__info-check-container" for="same-info">Shipping address is the same as my billing address
+                        <input type="checkbox" id="same-info">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="form__info-check-container" for="save-info">Save this information for next time    
+                        <input type="checkbox" id="save-info">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <h2>Payment</h2>
+                <div class="form__payment-check">
+                    <label class="form__payment-check-container" for="pay-credit">Credit card
+                        <input type="radio" name="paymentMethod" id="pay-credit">
+                        <span class="checkradio"></span>
+                    </label>
+                    <label class="form__payment-check-container" for="pay-debit">Debit card
+                        <input type="radio" name="paymentMethod" id="pay-debit">
+                        <span class="checkradio"></span>
+                    </label>
+                    <label class="form__payment-check-container" for="pay-paypal">PayPal
+                        <input type="radio" name="paymentMethod" id="pay-paypal">
+                        <span class="checkradio"></span>
+                    </label>
+                </div>
+                <div class="form__payment-dates">
+                    <div class="form__payment-dates-input form__address-input--50">
+                        <label for="namecard">Name on card</label>
+                        <input class="blue-focus" type="text" id="namecard">
+                        <span>Full name as displayed on card
+                        </span>
+                    </div>
+                    <div class="form__payment-dates-input form__address-input--50">
+                        <label for="cardnumber">Credit card number</label>
+                        <input class="blue-focus" type="text" id="cardnumber">
+                    </div>
+                    <div class="form__payment-dates-input form__address-input--25">
+                        <label for="cardexpiration">Expiration</label>
+                        <input class="blue-focus" type="text" id="cardexpiration">
+                    </div>
+                    <div class="form__payment-dates-input form__address-input--25">
+                        <label for="cardccv">CVV</label>
+                        <input class="blue-focus" type="text" id="cardccv">
+                    </div>
+                </div>
+                <div class="form__checkout-button">
+                    <button class="blue-focus">Continue to checkout</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <p>© 2017–2021 Company Name</p>
+            <ul class="footer__link-list">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
